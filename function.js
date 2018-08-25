@@ -20,3 +20,19 @@ const nomnom = (person, food) => {
 };
 const bearSticks = nuggetizer('bear');
 console.log(nomnom('mohammad', bearSticks));
+
+
+// function numberadder that takes in a number and 
+// return the number 3. so input=22, output =25
+
+const numberAdder = (num) => {
+const finalNumber = num +3;
+printToDom (`<h2>${finalNumber}</h2>`, 'alltheNumbers');
+};
+
+const printToDom = (stringToPrint, divId) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML += stringToPrint;
+};
+
+console.log('num: ', numberAdder(22)); //25
